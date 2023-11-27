@@ -1,0 +1,35 @@
+
+
+*{
+    text-decoration: underline;
+}
+
+h2{
+    color: blueviolet;
+}
+
+.borde{
+    border: 1px solid black;
+}
+
+.titulo{
+    text-align: center;
+    color:blue
+}
+
+.titulo-borde{
+    border: 1px solid black
+}
+
+#section{
+    border: 1px solid black
+}
+
+.😁{
+    color: blue;
+}
+
+.😂{
+    border: 1px solid black;
+    font-size: 20px
+}
