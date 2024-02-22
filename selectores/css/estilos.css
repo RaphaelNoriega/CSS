@@ -1,5 +1,7 @@
 
-
+/* este es un selector universal
+dice: selecciona todos los elementos, es como que a todos los
+selectores les da un estilo */
 *{
     text-decoration: underline;
 }
@@ -8,17 +10,21 @@ h2{
     color: blueviolet;
 }
 
+/* el punto define una clase en css */
 .borde{
     border: 1px solid black;
 }
 
+/* css es un lenguaje de cascada, es decir se lee de arriba hacia abajo, si cambias un color entonces todo cambia */
 .titulo{
     text-align: center;
-    color:blue
+    color:blue;
+    color:red;
 }
 
+/* los elementos html pueden tener mas de una clase sin ningun problema */
 .titulo-borde{
-    border: 1px solid black
+    border: 1px solid black;
 }
 
 #section{
@@ -32,4 +38,34 @@ h2{
 .😂{
     border: 1px solid black;
     font-size: 20px
+}
+
+
+/* selectores de atributo */
+h2[class]{
+    font-size: 45px;
+}
+
+/* podemos especificar cual queremos que cambie de color */
+[href="https://www.youtube.com/"]{
+    color: darkgreen;
+}
+
+/* pero que flojera estar poniendo tantas direcciones verdad? */
+/* el gorrito lo sacan con alt + 94 */
+[href^="www"]{
+    color: tomato;
+}
+
+/* selectores de atributo */
+/* en este caso usamos el simbolo de pesos para gregar un fondo 
+solamente al atributo que esta al final */
+[href$="org"]{
+    color: yellow;
+}
+
+/* un selector que contenga una plabra no al final no al inicio */
+[href*="o"]{
+    color: palevioletred;
+    font-size: 20px;
 }
